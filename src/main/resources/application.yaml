@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: music
+  datasource:
+    username: ${MUSIC_USERNAME:postgres}
+    password: ${MUSIC_PASSWORD:7878}
+    url: ${MUSIC_URL:jdbc:postgresql://localhost:5432/music}
+  liquibase:
+    enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
